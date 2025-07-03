@@ -1,15 +1,8 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Find Heros </h1>
-    <h2>Your search of finding heros end here</h2>
-    <h3>Alpha, Bita, Gama and SaReGaMa</h3>
-</body>
-</html>
+{% extends "layout.html" %}
+{% extends "all_chai.html" %}
+{% block title %}
+    Home Page
+{% endblock  %}
+{% block content %}
+    <h1>Your are seeing the content</h1>
+{% endblock %}
