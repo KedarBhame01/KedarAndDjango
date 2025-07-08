@@ -1,8 +1,22 @@
-{% extends "layout.html" %}
-{% extends "all_chai.html" %}
-{% block title %}
+<!-- {% extends "layout.html" %} -->
+<!-- {% extends "all_chai.html" %} -->
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'contact.css'%}">
+    {% block title %}
     Home Page
 {% endblock  %}
-{% block content %}
+</head>
+<body>
+    <h1>Kedar Bhame</h1>
+    <h3>Hii guys my name is kedar bhame i am the <b>Owner</b> of this website.</h3>
+    
+    {% block content %}
     <h1>Your are seeing the content</h1>
-{% endblock %}
+    {% endblock %}
+</body>
+</html>
