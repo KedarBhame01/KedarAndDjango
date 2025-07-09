@@ -5,4 +5,11 @@
 
 {% block content %}
      <h1>Your are seeing the content on the all chai page</h1> 
+     <h2>hi i am Kedar </h2>
+
+    {% for chai in chais %}
+        <div class="chai-item">
+            <h2>{{chai.name}}</h2>
+        </div>
+    {% endfor %}
 {% endblock %}
