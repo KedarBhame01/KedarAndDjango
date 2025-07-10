@@ -10,6 +10,9 @@
     {% for chai in chais %}
         <div class="chai-item">
             <h2>{{chai.name}}</h2>
+            <a href="{% url 'chai_detail' chai.id %}">
+            <button type="button">SEE</button>
+            </a>
         </div>
     {% endfor %}
 {% endblock %}
