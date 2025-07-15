@@ -18,6 +18,9 @@ def chai_store_view(request):
         form = ChaiVarietyForm(request.POST)
         if form.is_valid():
             chai_variety = form.cleaned_data['chai_varity']
-            stores = Store.objects.filter(chai_varieties = chai_variety)
+            stores = stores.objects.filter(chai_varieties = chai_variety)
     else:form = ChaiVarietyForm()
     return render(request,'chai/chai_stores.html', {'stores': stores, 'form': form})
+#  hi my name is kedar Bhame 
+# near me shivraj halande is sitting on sofa  
+# hi guys
